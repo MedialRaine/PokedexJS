@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./css/pokedex.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    
+</head>
+<body>
+    <img class="brand" src="./img/d0d9e3b2641f551a94089042b7e34868.png" alt="app-logo">
+    
+    <div class="pokedex">
+        <!--Panel izquierdo -->
+        <div class="leftPannel">
+            <!--Luces y contenedor superior -->
+            <div class="topLeftContainer">
+                <div class="lightsContainer">
+                    <div class="bigLight">
+                        <div class="innerColorLightBlue">
+                            <div class="bigBrightLight"></div>
+                        </div>
+                    </div>
+                    <div class="smallLightsContainer">
+                        <div class="littleLight red">
+                            <div class="littleShine lightRed"></div>
+                        </div>
+                        <div class="littleLight yellow">
+                            <div class="littleShine lightYellow"></div>
+                        </div>
+                        <div class="littleLight green">
+                            <div class="littleShine lightGreen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Pantalla -->
+            <div class="screenSection">
+                <div class="screenEdge">
+                    <div class="topScreenLights">
+                        <div class="littleFullDot red"></div>
+                        <div class="littleFullDot red"></div>
+                    </div>
+                    <div class="mainScreen">
+                        <img class="pokemonProfile" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="pokemon-preview">    
+                    </div>
+                    <div class="bottomScreenLightsContainer">
+                        <div class="littleLightRed red">
+                            <div class="littleShine lightRed"></div>
+                        </div>
+                        <div class="sandwich">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomButtonsSection">
+                <div class="topButtonsContainer">
+                    <div class="circleButtonGrey"></div>
+                    <div class="lngBtnContainer">
+                        <div class="longLight red"></div>
+                        <div class="longLight blue"></div>
+                    </div>
+                </div>
+                <div class="bottomButtonsContainer">
+                    <div class="dotContainerLeft">
+                        <div>.</div>
+                        <div>.</div>
+                    </div>
+                    <div class="screenName" id="name"></div>
+                    <div class="dotContainerRight">
+                        <div>.</div>
+                        <div>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--final del panel izquierdo -->
+        <!--comienzo del panel derecho -->
+        <div class="rightPannel">
+            <div class="infoScreenContainer">
+                <div class="infoScreen">
+                    <div class="info" id="numPokeDex"></div>
+                    <div class="info" id="height"></div>
+                    <div class="info" id="weight"></div>
+                    <div class="info" id="type1"></div>
+                    <div class="info" id="type2"></div>
+                </div>
+                <!--Botones con forma de baldoza -->
+                <div class="tilesContainer">
+                    <div class="rowTile">
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                    </div>
+                    <div class="rowTile">
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rightPannelBottomContainer">
+                <!--Pantalla de estadisticas -->
+                <div class="statsScreen">
+                    <div class="statcolumn">
+                        <div class="info" id="healthPoints"></div>
+                        <div class="info" id="attack"></div>
+                        <div class="info" id="defense"></div>
+                    </div>
+                    <div lass="statcolumn">
+                        <div id="specialAttack"></div>
+                        <div id="specialDefense"></div>
+                        <div id="speed"></div>
+                    </div>
+                </div>
+                <!-- botones blancos -->
+                <div class="tilesContainer">
+                    <div class="rowTile">
+                        <div class="tile white"></div>
+                        <div class="tile white"></div>
+                    </div>
+                </div>
+                    
+                <!--pantalla de ataques-->
+                <div class="movesScreen">
+                    <div>
+                        <div id="move1"></div>
+                        <div id="move2"></div>
+                    </div>
+                    <div>
+                        <div id="move3"></div>
+                        <div id="move4"></div>
+                    </div>
+                </div>
+                <!-- botones blancos-->
+                <div class="tilesContainer">
+                    <div class="rowTile">
+                        <div class="tile white"></div>
+                        <div class="tile white"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin del pokedex y comienzo del input-->
+    
+    <div class="input">
+        <input type="text" id="nameInput" name="nameInput" placeholder="Nombre/ID">
+        <button id="searchButton" name="searchButton">Busca tu pokemon</button>
+    </div>
+    
+
+</body>
+<script src="./pokedex.js"></script>
+</html>
