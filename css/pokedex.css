@@ -1,0 +1,444 @@
+body {
+	font-family: "mukta", sans-serif;
+}
+
+.brand {
+	display: flex;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+/* Pokédex Start*/
+
+.pokedex {
+	display: flex;
+	position: relative;
+	margin: auto;
+	background-color: red;
+	width: 22rem;
+	height: 20rem;
+	justify-content: space-around;
+	align-items: center;
+	border-style: solid;
+}
+
+.leftPannel {
+	display: grid;
+	border-style: solid;
+	width: 50%;
+	height: 100%;
+}
+
+/* Input Field */
+
+.input {
+	display: flex;
+	margin-top: 2rem;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+}
+
+#nameInput {
+	border-radius: 5px;
+	border: solid black 2px;
+}
+
+#searchButton {
+	font-size: 15px;
+	font-family: Arial;
+	width: 10rem;
+	height: 1.5rem;
+	border-width: 1px;
+	color: #ffffff;
+	border-color: #d83526;
+	font-weight: bold;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	box-shadow: inset 0px 1px 0px 0px #f29c93;
+	text-shadow: inset 0px 1px 0px #b23e35;
+	background: linear-gradient(#fe1a00, #ce0100);
+}
+
+#searchButton:hover {
+	background: linear-gradient(#ce0100, #fe1a00);
+}
+
+/* Lights */
+
+.lightsContainer {
+	position: relative;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.bigLight {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	width: 3rem;
+	background: white;
+	border-radius: 50%;
+	border: solid black;
+	margin-left: 0.3125rem;
+}
+
+.innerColorLightBlue {
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	border: solid black;
+	background-color: #3298cb;
+}
+
+.bigBrightLight {
+	width: 1rem;
+	height: 1rem;
+	position: relative;
+	border-radius: 50%;
+	background-color: #85bdfe;
+	top: 0.25rem;
+	left: 0.25rem;
+}
+
+.smallLightsContainer {
+	margin-top: 0.5rem;
+	margin-left: 0.625rem;
+	justify-content: space-around;
+	display: flex;
+	align-self: start;
+	height: 100%;
+	width: 4.375rem;
+}
+
+.littleLight {
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	border: solid black;
+	margin-right: 3px;
+}
+
+.red {
+	background-color: #d40101;
+}
+
+.yellow {
+	background-color: #fbb426;
+}
+
+.green {
+	background-color: #26ca5d;
+}
+
+.littleShine {
+	width: 0.25rem;
+	height: 0.25rem;
+	position: relative;
+	border-radius: 50%;
+	top: 0.2rem;
+	left: 0.2rem;
+}
+
+.lightRed {
+	background-color: #fe95c7;
+}
+
+.lightYellow {
+	background-color: #fefdc8;
+}
+
+.lightGreen {
+	background-color: #92fb07;
+}
+
+/* Pokémon Screen */
+
+.screenSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2.5rem;
+}
+
+.screenEdge {
+	border: solid black;
+	height: 7rem;
+	width: 7rem;
+	background-color: #ffffff;
+	border-bottom-left-radius: 25%;
+	display: grid;
+	grid-template-rows: 10% 72% 18%;
+}
+
+.topScreenLights {
+	display: flex;
+	justify-self: center;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+}
+
+.littleFullDot {
+	height: 0.5rem;
+	width: 0.5rem;
+	border-radius: 50%;
+	border: solid black 1px;
+	margin-right: 0.3125rem;
+	margin-left: 0.3125rem;
+}
+
+.mainScreen {
+	height: 100%;
+	width: 80%;
+	justify-self: center;
+	background-color: #98cb98;
+	border: solid black 3px;
+	border-radius: 5%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+img.pokemonProfile {
+	width: 100%;
+	height: 100%;
+}
+
+.bottomScreenLightsContainer {
+	display: flex;
+	margin-top: 1px;
+	width: 75%;
+	justify-content: space-between;
+	align-items: center;
+	justify-self: center;
+}
+
+.bottomScreenLightsContainer .littleLightRed {
+	border: solid black 2px;
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	margin-left: 1rem;
+	margin-top: 5px;
+}
+
+.bottomScreenLightsContainer .littleShine {
+	width: 0.25rem;
+	height: 0.25rem;
+	position: relative;
+	top: 1.5px;
+	left: 1px;
+}
+
+.sandwich {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+}
+
+.line {
+	width: 1rem;
+	height: 2px;
+	background-color: black;
+	margin-top: 1px;
+}
+
+/* Buttons */
+.bottomButtonsSection {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+}
+
+/* Upper buttons */
+
+.topButtonsContainer {
+	display: flex;
+	position: relative;
+	align-content: space-between;
+	justify-content: center;
+}
+
+.circleButtonGrey {
+	width: 1.5rem;
+	height: 1.5rem;
+	border: solid black 2px;
+	border-radius: 50%;
+	background-color: #585858;
+	margin-left: -1rem;
+}
+
+.lngBtnContainer {
+	display: flex;
+	position: relative;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.longLight {
+	width: 2rem;
+	height: 1px;
+	border: solid black 2px;
+	margin-left: 1rem;
+	border-radius: 50px;
+}
+
+.blue {
+	background-color: #78aae7;
+}
+
+/* Screen name*/
+.bottomButtonsContainer {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+.screenName {
+	display: flex;
+	width: 55%;
+	height: 1rem;
+	background-color: #3ab47d;
+	font-size: small;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	border: solid black 2px;
+	border-radius: 5%;
+}
+
+.dotContainerLeft {
+	display: flex;
+	justify-self: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	position: absolute;
+	left: 1rem;
+	bottom: -1.25rem;
+}
+
+.dotContainerRight {
+	display: flex;
+	justify-self: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	position: absolute;
+	right: 1rem;
+	bottom: -1.25rem;
+}
+
+/*Pokédex right side*/
+.rightPannel {
+	display: grid;
+	border-style: solid;
+	width: 50%;
+	height: 100%;
+}
+
+/* Info Screen */
+
+.infoScreenContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.infoScreen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 65%;
+	height: 40%;
+	background-color: #585858;
+	border: solid black 2px;
+	font-size: 0.5rem;
+	font-weight: bold;
+	border-radius: 5px;
+	color: #f6e205;
+	line-height: 1.2;
+}
+
+.info {
+	margin-left: 5px;
+}
+/* Blue tiles */
+.tilesContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.rowTile {
+	display: flex;
+	align-items: center;
+}
+
+.tile {
+	display: flex;
+	width: 1rem;
+	height: 1rem;
+	background-color: #7ca9f7;
+	border-radius: 5px;
+	border: solid black 1px;
+	box-shadow: 7px 7px 3px lightblue inset;
+	margin-top: 0.4rem;
+}
+/* Stats Screen */
+
+.rightPannelBottomContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	align-content: center;
+}
+.white {
+	background-color: #ffffff;
+}
+
+.statsScreen {
+	height: 40%;
+	width: 80%;
+	border: solid black 2px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	background-color: #585858;
+	color: #fecb65;
+	font-size: 0.5rem;
+	font-weight: bold;
+	margin-top: -2.3rem;
+	align-items: center;
+	justify-content: space-around;
+}
+/* Moves screen */
+
+.movesScreen {
+	height: 40%;
+	width: 70%;
+	border: solid black 2px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	background-color: #585858;
+	color: #fecb65;
+	font-size: 0.5rem;
+	font-weight: bold;
+	align-items: center;
+	justify-content: space-around;
+	align-self: center;
+	margin-top: 0.5rem;
+}

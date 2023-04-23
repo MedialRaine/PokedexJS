@@ -37,6 +37,10 @@ const resetFields = () => {
 	move4.innerHTML = "";
 };
 
+function pseudoRandomNumber() {
+	return Math.floor(Math.random() * 101);
+}
+
 const getPokemon = (pokemon) => {
 	resetFields();
 
@@ -46,21 +50,21 @@ const getPokemon = (pokemon) => {
 			console.log(data);
 			pokemonProfilePic.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
 			nameScreen.innerHTML = data.name;
-			idPokedex.innerHTML = "ID en pokédex: " + data.id;
-			height.innerHTML = `Altura: ${data.height * 10} cm`;
-			weight.innerHTML = `Peso: ${data.weight / 10} kg`;
-			hp.innerHTML = "Salud: " + data.stats[0].base_stat;
-			atk.innerHTML = "Ataque: " + data.stats[1].base_stat;
-			def.innerHTML = "Defensa: " + data.stats[2].base_stat;
-			spcAtk.innerHTML = "Ataque Especial: " + data.stats[3].base_stat;
-			spcDef.innerHTML = "Defensa Especial: " + data.stats[4].base_stat;
-			speed.innerHTML = "Velocidad: " + data.stats[5].base_stat;
-			move1.innerHTML = "" + data.moves[22].move.name;
-			move2.innerHTML = "" + data.moves[12].move.name;
-			move3.innerHTML = "" + data.moves[9].move.name;
-			move4.innerHTML = "" + data.moves[1].move.name;
-			type1.innerHTML = "Tipo Principal: " + data.types[0].type.name;
-			type2.innerHTML = "Tipo Secundario: " + data.types[1].type.name;
+			idPokedex.innerHTML = "Pokédex ID: " + data.id;
+			height.innerHTML = `Height: ${data.height * 10} cm`;
+			weight.innerHTML = `Weight: ${data.weight / 10} kg`;
+			hp.innerHTML = "HP: " + data.stats[0].base_stat;
+			atk.innerHTML = "Atk: " + data.stats[1].base_stat;
+			def.innerHTML = "Def: " + data.stats[2].base_stat;
+			spcAtk.innerHTML = "SpAtk: " + data.stats[3].base_stat;
+			spcDef.innerHTML = "SpDef: " + data.stats[4].base_stat;
+			speed.innerHTML = "Speed: " + data.stats[5].base_stat;
+			move1.innerHTML = "" + data.moves[pseudoRandomNumber(1)].move.name;
+			move2.innerHTML = "" + data.moves[pseudoRandomNumber(2)].move.name;
+			move3.innerHTML = "" + data.moves[pseudoRandomNumber(3)].move.name;
+			move4.innerHTML = "" + data.moves[pseudoRandomNumber(4)].move.name;
+			type1.innerHTML = "First Type: " + data.types[0].type.name;
+			type2.innerHTML = "Second Type: " + data.types[1].type.name;
 		});
 };
 
